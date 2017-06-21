@@ -24,7 +24,7 @@ $(document).ready(function(){
   console.log("JS2");
 
   //fade in
-  $("body").hide(0).delay(500).fadeIn(2000);
+  $("body").delay(500).fadeIn(2000);
 
   //profile pic hover hinge
   $("#profile-pic").hover(function(){
