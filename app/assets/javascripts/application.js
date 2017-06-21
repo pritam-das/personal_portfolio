@@ -14,8 +14,31 @@
 //= require jquery_ujs
 //= require rails-ujs
 //= require turbolinks
-//= require bootstrap
+//= require bootstrap.js
 //= require contact_me.js
-//= require freelancer.js
+//= require freelancer
 //= require freelancer.min.js
 //= require jqBootstrapValidation.js
+
+$(function(){
+  console.log("JS2");
+
+  $(".name").hover(function(){
+    $(this).addClass("animated bounceIn");
+    console.log("name click executed");
+    setTimeout(function(){
+    $(".name").removeClass("animated bounceIn");
+
+    }, 2000);
+  })
+
+  $(".hovering").hover(function(){
+    $(this).addClass("animated rubberBand");
+    console.log("hover");
+    setTimeout(function(){
+    $(".hovering").removeClass("animated rubberBand");
+
+    }, 1000);
+  });
+
+});
