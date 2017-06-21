@@ -20,8 +20,12 @@
 //= require freelancer.min.js
 //= require jqBootstrapValidation.js
 
-$(function(){
+$(document).ready(function(){
   console.log("JS2");
+
+  //fade in
+  $("body").hide(0).delay(500).fadeIn(2000);
+
 
   $(".name").hover(function(){
     $(this).addClass("animated bounceIn");
