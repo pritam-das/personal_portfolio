@@ -26,7 +26,17 @@ $(document).ready(function(){
   //fade in
   $("body").hide(0).delay(500).fadeIn(2000);
 
+  //profile pic hover hinge
+  $("#profile-pic").hover(function(){
+    $(this).addClass("animated hinge");
+    console.log("name click executed");
+    setTimeout(function(){
+    $("#profile-pic").removeClass("animated hinge");
 
+    }, 2000);
+  })
+
+  //name bounceIn hover
   $(".name").hover(function(){
     $(this).addClass("animated bounceIn");
     console.log("name click executed");
@@ -36,6 +46,7 @@ $(document).ready(function(){
     }, 2000);
   })
 
+  //skills rubberBand hover
   $(".hovering").hover(function(){
     $(this).addClass("animated rubberBand");
     console.log("hover");
