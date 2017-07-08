@@ -32,6 +32,15 @@ h6 {
   font-weight: 700;
 }
 
+.contactspacing {
+text-align: center;
+
+}
+
+.email{
+padding-left: -100px;
+}
+
 hr.style1{
 	border-top: 5px solid white;
   width: 50%;
@@ -95,6 +104,7 @@ header img {
   margin: 0 auto;
   border: 2px solid white;
   height: 256px;
+  image-rendering: auto;
 
 }
 
@@ -232,9 +242,19 @@ section.success {
   }
 }
 
+li{
+line-height: 1.5;
+font-size: 18px;
+}
+
+#contact {
+  background-image: image-url('/assets/background8.jpeg');;
+
+}
+
 #portfolio {
   background-image: image-url('/assets/background8.jpeg');;
-  
+
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -483,7 +503,7 @@ fieldset[disabled] .btn-success.active {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
+  text-align: justify;
 }
 .portfolio-modal .modal-content h2 {
   margin: 0;
