@@ -247,6 +247,10 @@ line-height: 1.5;
 font-size: 18px;
 }
 
+.justify {
+text-align: justify;
+}
+
 #contact {
   background-image: image-url('/assets/background8.jpeg');;
 

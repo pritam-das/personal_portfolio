@@ -15,7 +15,6 @@
 //= require rails-ujs
 //= require turbolinks
 //= require bootstrap.js
-//= require contact_me.js
 //= require freelancer
 //= require freelancer.min.js
 //= require jqBootstrapValidation.js
@@ -28,10 +27,10 @@ $(document).ready(function(){
 
   //profile pic hover hinge
   $("#profile-pic").hover(function(){
-    $(this).addClass("animated hinge");
+    $(this).addClass("animated bounceOutUp");
     console.log("name click executed");
     setTimeout(function(){
-    $("#profile-pic").removeClass("animated hinge");
+    $("#profile-pic").removeClass("animated bounceOutUp");
 
     }, 2000);
   })
